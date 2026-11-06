@@ -1,0 +1,125 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #101820;
+  color: white;
+}
+
+header {
+  background: #172b3a;
+  color: gold;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0 0 15px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+main {
+  padding: 25px 15px;
+  min-height: 75vh;
+}
+
+.card {
+  max-width: 480px;
+  margin: 20px auto;
+  padding: 25px;
+  background: #263746;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px #0005;
+}
+
+.card h2, .card h3 {
+  color: gold;
+  text-align: center;
+}
+
+.card p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-top: 13px;
+  margin-bottom: 6px;
+}
+
+input, select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #aaa;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+small {
+  display: block;
+  color: #ff8b8b;
+  margin-top: 5px;
+}
+
+button, .button {
+  display: inline-block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background: gold;
+  color: #101820;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.success {
+  color: lightgreen;
+  font-weight: bold;
+}
+
+footer {
+  background: #172b3a;
+  text-align: center;
+  padding: 18px;
+  color: gold;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 18px;
+  }
+
+  nav {
+    gap: 15px;
+  }
+}
